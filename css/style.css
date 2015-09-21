@@ -12,47 +12,112 @@
   font-weight: 400;
   font-style: normal; }
 
-/* line 11, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+/* line 21, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
 * {
   margin: 0;
   padding: 0; }
 
-/* line 16, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+/* line 26, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
 html {
   text-align: center; }
 
-/* line 19, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+/* line 29, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+article {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 32, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
 .wrapper {
   margin: auto;
   text-align: center;
-  width: 80%; }
+  width: 95%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
-/* line 25, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+/* line 40, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
 header {
   background: #f1c40f;
-  color: #ecf0f1;
-  display: table-cell;
+  color: #fff;
   font-family: "Amatic Bold";
-  height: 100vh;
-  text-shadow: 0 0 30px #000;
-  vertical-align: middle;
-  width: 100vw; }
-  /* line 35, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
-  header .wrapper {
-    display: inline-block;
-    height: 20vh;
-    width: 40vw; }
-  /* line 40, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
-  header h1 {
+  text-shadow: 0 0 50px #333;
+  height: 60vh;
+  width: 100%; }
+  /* line 51, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  header .wrapper h1 {
     font-size: 16vw;
     margin: 0% 1% 0% 1%; }
-  /* line 44, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
-  header small {
+  /* line 55, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  header .wrapper small {
     font-size: 4vw;
     margin: 0% 1% 1% 1%; }
 
-/* line 50, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+/* line 62, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
 #article1 {
-  height: 100vh; }
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  height: 60vh; }
+  /* line 69, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  #article1 .wrapper .col {
+    padding: 0 2%;
+    width: 29%;
+    display: inline-block;
+    vertical-align: text-top; }
+    /* line 75, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+    #article1 .wrapper .col i {
+      font-size: 4vw; }
+    /* line 78, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+    #article1 .wrapper .col h1 {
+      font-size: 2.5vw; }
+    /* line 81, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+    #article1 .wrapper .col p {
+      font-size: 1.3vw; }
+
+/* line 88, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+#article2 {
+  background: #f1c40f;
+  height: 50vh; }
+  /* line 94, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  #article2 .wrapper h1 {
+    color: #fff;
+    text-shadow: 0 0 50px #333;
+    font-size: 5vw;
+    font-weight: 300;
+    padding: 12%;
+    padding-top: 0; }
+  /* line 102, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  #article2 .wrapper .col {
+    display: inline-block;
+    width: 45%; }
+    /* line 106, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+    #article2 .wrapper .col blockquote {
+      background: #fff;
+      border: solid 2px #7f8c8d;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #444;
+      font-size: 2vw;
+      padding: 1%;
+      text-align: left;
+      height: 4%; }
+      /* line 116, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+      #article2 .wrapper .col blockquote .blue {
+        color: #3374bc; }
+      /* line 119, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+      #article2 .wrapper .col blockquote .red {
+        color: #a71d5d; }
+      /* line 122, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+      #article2 .wrapper .col blockquote .orange {
+        color: #ff8000; }
+      /* line 125, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+      #article2 .wrapper .col blockquote .green {
+        color: #007700; }
+      /* line 129, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+      #article2 .wrapper .col blockquote .mcq-code, #article2 .wrapper .col blockquote .mcq-terminal {
+        color: #7f8c8d;
+        margin-right: 4%; }
+    /* line 134, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+    #article2 .wrapper .col .code {
+      font-family: monospace; }
 
 /*# sourceMappingURL=style.css.map */

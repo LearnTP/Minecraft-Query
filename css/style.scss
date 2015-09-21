@@ -2,11 +2,21 @@
 
 $font-amatic-bold: 'Amatic Bold';
 $font-amatic: 'Amatic Regular';
+$font-body: 'Open Sans', sans-serif;
 
-$color-black: #000;
-$color-grey: #7f8c8d;
-$color-white: #ecf0f1;
+$color-black: #333;
+$color-grey: #444;
+$color-lgrey: #7f8c8d;
+$color-white: #fff;
 $color-yellow: #f1c40f;
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 * {
     margin: 0;
@@ -16,37 +26,114 @@ $color-yellow: #f1c40f;
 html{
     text-align: center;
 }
+article{
+    font-family: $font-body;
+}
 .wrapper{
     margin: auto;
     text-align: center;
-    width: 80%;
+    width: 95%;
+        
+    @include vertical-align();
 }
 
 header{
     background: $color-yellow;
     color: $color-white;
-    display: table-cell;
     font-family: $font-amatic-bold;
-    height: 100vh;
-    text-shadow: 0 0 30px $color-black;
-    vertical-align: middle;
-    width: 100vw;
+    text-shadow: 0 0 50px $color-black;
+    
+    height: 60vh;
+    width: 100%;
     
     .wrapper{
-        display: inline-block;
-        height: 20vh;
-        width: 40vw;
-    }
-    h1{
-        font-size: 16vw;
-        margin: 0% 1% 0% 1%;
-    }
-    small{
-        font-size: 4vw;
-        margin: 0% 1% 1% 1%;
+        
+        h1{
+            font-size: 16vw;
+            margin: 0% 1% 0% 1%;
+        }
+        small{
+            font-size: 4vw;
+            margin: 0% 1% 1% 1%;
+        }
     }
 }
 
 #article1{
-    height: 100vh;
+    color: $color-grey;
+    font-family: $font-body;
+    height: 60vh;
+    
+    .wrapper{
+        
+        .col{
+            padding: 0 2%;
+            width: 29%;
+            display: inline-block;
+            vertical-align: text-top;
+            
+            i{
+                font-size: 4vw;
+            }
+            h1{
+                font-size: 2.5vw;
+            }
+            p{
+                font-size: 1.3vw;
+            }
+        }
+    }
+}
+
+#article2{
+    background: $color-yellow;
+    height: 50vh;
+    
+    .wrapper{
+        
+        h1{
+            color: $color-white;
+            text-shadow: 0 0 50px $color-black;
+            font-size: 5vw;
+            font-weight: 300;
+            padding: 12%;
+            padding-top: 0;
+        }
+        .col{
+            display: inline-block;
+            width: 45%;
+            
+            blockquote{
+                background: $color-white;
+                border: solid 2px $color-lgrey;
+                border-radius: 10px;
+                box-shadow: 0 0 20px $color-grey;
+                font-size: 2vw;
+                padding: 1%;
+                text-align: left;
+                height: 4%;
+
+                .blue{
+                    color: #3374bc;
+                }
+                .red{
+                    color: #a71d5d;
+                }
+                .orange{
+                    color: #ff8000;
+                }
+                .green{
+                    color: #007700;
+                }
+
+                .mcq-code, .mcq-terminal{
+                    color: $color-lgrey;
+                    margin-right: 4%;
+                }
+            }
+            .code{
+                font-family: monospace;
+            }
+        }
+    }
 }
