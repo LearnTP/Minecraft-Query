@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Amatic Bold';
+  src: url("fonts/amatic-bold-webfont.eot");
+  src: url("fonts/amatic-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/amatic-bold-webfont.woff2") format("woff2"), url("fonts/amatic-bold-webfont.woff") format("woff"), url("fonts/amatic-bold-webfont.ttf") format("truetype"), url("fonts/amatic-bold-webfont.svg#amaticbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Amatic Regular';
+  src: url("fonts/amaticsc-regular-webfont.eot");
+  src: url("fonts/amaticsc-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/amaticsc-regular-webfont.woff2") format("woff2"), url("fonts/amaticsc-regular-webfont.woff") format("woff"), url("fonts/amaticsc-regular-webfont.ttf") format("truetype"), url("fonts/amaticsc-regular-webfont.svg#amatic_scregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+/* line 11, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 16, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+html {
+  text-align: center; }
+
+/* line 19, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+.wrapper {
+  margin: auto;
+  text-align: center;
+  width: 80%; }
+
+/* line 25, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+header {
+  background: #f1c40f;
+  color: #ecf0f1;
+  display: table-cell;
+  font-family: "Amatic Bold";
+  height: 100vh;
+  text-shadow: 0 0 30px #000;
+  vertical-align: middle;
+  width: 100vw; }
+  /* line 35, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  header .wrapper {
+    display: inline-block;
+    height: 20vh;
+    width: 40vw; }
+  /* line 40, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  header h1 {
+    font-size: 16vw;
+    margin: 0% 1% 0% 1%; }
+  /* line 44, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+  header small {
+    font-size: 4vw;
+    margin: 0% 1% 1% 1%; }
+
+/* line 50, M:/Jake Taylor Web Design/Work/MCQ/Web Page/css/style.scss */
+#article1 {
+  height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */

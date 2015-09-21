@@ -1,0 +1,52 @@
+@import 'fonts';
+
+$font-amatic-bold: 'Amatic Bold';
+$font-amatic: 'Amatic Regular';
+
+$color-black: #000;
+$color-grey: #7f8c8d;
+$color-white: #ecf0f1;
+$color-yellow: #f1c40f;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    text-align: center;
+}
+.wrapper{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+header{
+    background: $color-yellow;
+    color: $color-white;
+    display: table-cell;
+    font-family: $font-amatic-bold;
+    height: 100vh;
+    text-shadow: 0 0 30px $color-black;
+    vertical-align: middle;
+    width: 100vw;
+    
+    .wrapper{
+        display: inline-block;
+        height: 20vh;
+        width: 40vw;
+    }
+    h1{
+        font-size: 16vw;
+        margin: 0% 1% 0% 1%;
+    }
+    small{
+        font-size: 4vw;
+        margin: 0% 1% 1% 1%;
+    }
+}
+
+#article1{
+    height: 100vh;
+}
