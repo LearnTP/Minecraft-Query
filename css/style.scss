@@ -1,4 +1,6 @@
 @import 'fonts';
+@import 'mixins';
+@import 'hover-min';
 
 $font-amatic-bold: 'Amatic Bold';
 $font-amatic: 'Amatic Regular';
@@ -9,14 +11,9 @@ $color-grey: #444;
 $color-lgrey: #7f8c8d;
 $color-white: #fff;
 $color-yellow: #f1c40f;
-
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+$color-dpurple: #833FA0;
+$color-lpurple: #9b59b6;
+$color-vdpurple: #82489B;
 
 * {
     margin: 0;
@@ -25,91 +22,126 @@ $color-yellow: #f1c40f;
 
 html{
     text-align: center;
+    
+    @include background-gradient($color-lpurple, $color-vdpurple);
 }
 article{
     font-family: $font-body;
 }
 .wrapper{
     margin: auto;
-    text-align: center;
-    width: 95%;
+    width: 80%;
+}
+
+nav{
+    order: 2;
+    flex: 4 0 0;
+    -webkit-flex: 4 0 0;
+    text-align: right;
+    
+    ul{
+        list-style-type: none;
         
-    @include vertical-align();
+        li{
+            display: inline;
+            
+            a{
+                color: $color-white;
+                display: inline;
+                text-decoration: none;
+                font-size: 400%;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+#header-container{
+    display: flex;
+    height: 20%;
+    vertical-align: middle;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 header{
-    background: $color-yellow;
     color: $color-white;
-    font-family: $font-amatic-bold;
-    text-shadow: 0 0 50px $color-black;
-    
-    height: 60vh;
+    font-family: $font-body;
+    text-align: left;
+    height: 200%;
     width: 100%;
     
     .wrapper{
+        text-align: left;
         
-        h1{
-            font-size: 16vw;
-            margin: 0% 1% 0% 1%;
+        #logo{
+            order: 1;
+            -webkit-flex: 1 0 0;
+            flex: 1 0 0;
+            text-align: center;
+            width: 20%;
+        
+            h1{
+                font-family: $font-amatic-bold;
+                font-size: 1000%;
+                margin: 0% 1% 0% 1%;
+            }
+            small{
+                font-family: $font-amatic-bold;
+                font-size: 260%;
+                margin: 0% 1% 1% 1%;
+            }
         }
-        small{
-            font-size: 4vw;
-            margin: 0% 1% 1% 1%;
+        
+        .container{
+            text-align: center;
+            
+            #title{
+                font-size: 350%;
+                font-weight: 300;
+                text-transform: lowercase;
+                padding-top: 4%;
+            }
+            
+            .col{
+                padding: 8% 2%;
+                width: 29%;
+                display: inline-block;
+                vertical-align: text-top;
+
+                i{
+                    font-size: 500%;
+                }
+                h1{
+                    font-size: 2.5vw;
+                }
+                p{
+                    font-size: 1.3vw;
+                }
+            }
         }
     }
 }
 
 #article1{
+    background: $color-white;
     color: $color-grey;
-    font-family: $font-body;
     height: 60vh;
     
     .wrapper{
         
         .col{
-            padding: 0 2%;
-            width: 29%;
             display: inline-block;
-            vertical-align: text-top;
-            
-            i{
-                font-size: 4vw;
-            }
-            h1{
-                font-size: 2.5vw;
-            }
-            p{
-                font-size: 1.3vw;
-            }
-        }
-    }
-}
-
-#article2{
-    background: $color-yellow;
-    height: 50vh;
-    
-    .wrapper{
-        
-        h1{
-            color: $color-white;
-            text-shadow: 0 0 50px $color-black;
-            font-size: 5vw;
-            font-weight: 300;
-            padding: 12%;
-            padding-top: 0;
-        }
-        .col{
-            display: inline-block;
-            width: 45%;
+            width: 48%;
             
             blockquote{
                 background: $color-white;
                 border: solid 2px $color-lgrey;
                 border-radius: 10px;
-                box-shadow: 0 0 20px $color-grey;
-                font-size: 2vw;
+                font-size: 150%;
                 padding: 1%;
+                margin-top: 5%;
                 text-align: left;
                 height: 4%;
 

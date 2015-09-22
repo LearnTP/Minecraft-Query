@@ -1,0 +1,28 @@
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin translate($x, $y){
+    -webkit-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+@mixin background-gradient($top, $bottom){
+    background: -webkit-linear-gradient($top, $bottom);
+    background: -o-linear-gradient($top, $bottom);
+    background: linear-gradient($top, $bottom);
+}
+@mixin scale($x){
+    -webkit-transform: translateZ(0) scale($x);
+    -ms-transform: translateZ(0) scale($x);
+    transform: translateZ(0) scale($x);
+}
+@mixin transition($dur, $func){
+    -webkit-transition: all $dur $func;
+    -ms-transition: all $dur $func;
+    transition: all $dur $func;
+}
