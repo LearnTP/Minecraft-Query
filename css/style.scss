@@ -140,6 +140,7 @@ header{
     .wrapper{
         display: flex;
         flex-flow: row wrap;
+        align-items: center;
         
         .row{
             padding: 1% 0;
@@ -151,18 +152,12 @@ header{
             .col{
                 display: inline-block;
                 width: 48%;
+                overflow: hidden;
                 
                 h2{
                     font-size: 200%;
                     padding: 0;
                 }
-            }
-            
-            &#no-padding-bottom{
-                padding-bottom: 0;
-            }
-            &#no-padding-top{
-                padding-top: 0;
             }
         }
     }

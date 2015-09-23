@@ -132,7 +132,8 @@ header {
     padding: 1% 0; }
   #article1 .wrapper {
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    align-items: center; }
     #article1 .wrapper .row {
       padding: 1% 0;
       width: 100%; }
@@ -140,13 +141,10 @@ header {
         padding: 1% 0; }
       #article1 .wrapper .row .col {
         display: inline-block;
-        width: 48%; }
+        width: 48%;
+        overflow: hidden; }
         #article1 .wrapper .row .col h2 {
           font-size: 200%;
           padding: 0; }
-      #article1 .wrapper .row#no-padding-bottom {
-        padding-bottom: 0; }
-      #article1 .wrapper .row#no-padding-top {
-        padding-top: 0; }
 
 /*# sourceMappingURL=style.css.map */

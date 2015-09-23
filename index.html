@@ -4,8 +4,12 @@
         <title>MCQ - Minecraft Query</title>
         
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="js/jquery.bxslider.css" rel="stylesheet" />
         
         <script src="https://use.fonticons.com/c93c9da1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -47,7 +51,7 @@
         
         <article id="article1">
             <h1>Example Usage</h1>
-            <div class="wrapper">
+            <div class="wrapper slider">
                 <div class="row">
                     <div class="col">
                         <p><strong>Step 1:</strong> Establish Connection</p>
@@ -56,14 +60,6 @@
                     <div class="col">
                         <p><strong>Step 2:</strong> Test Connection</p>
                         <script src="https://gist.github.com/th3no0b/c185d37b75ffd1583468.js?file=check-connection.php"></script>
-                    </div>
-                </div>
-                <div class="row" id="no-padding-bottom">
-                    <div class="col">
-                        <h2>Input</h2>
-                    </div>
-                    <div class="col">
-                        <h2>Output</h2>
                     </div>
                 </div>
                 <div class="row" id="no-padding-top">
@@ -95,5 +91,15 @@
                 </div>
             </div>
         </article>
+        
+        <script>
+            $(document).ready(function(e){
+                $('.slider').bxSlider({
+                    mode: 'fade',
+                    adaptiveHeight: true,
+                    pager: false
+                });
+            });
+        </script>
     </body>
 </html>
