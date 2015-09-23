@@ -9,6 +9,7 @@ $font-body: 'Open Sans', sans-serif;
 $color-black: #333;
 $color-grey: #444;
 $color-lgrey: #7f8c8d;
+$color-vlgrey: #aaa;
 $color-white: #fff;
 $color-yellow: #f1c40f;
 $color-dpurple: #833FA0;
@@ -81,6 +82,7 @@ header{
             flex: 1 0 0;
             text-align: center;
             width: 20%;
+            
         
             h1{
                 font-family: $font-amatic-bold;
@@ -99,13 +101,15 @@ header{
             
             #title{
                 font-size: 350%;
-                font-weight: 300;
+                font-weight: 700;
                 text-transform: lowercase;
-                padding-top: 4%;
+                margin-top: 8%;
+                
+                @include three-d-text();
             }
             
             .col{
-                padding: 8% 2%;
+                padding: 10% 2%;
                 width: 29%;
                 display: inline-block;
                 vertical-align: text-top;
@@ -114,10 +118,10 @@ header{
                     font-size: 500%;
                 }
                 h1{
-                    font-size: 2.5vw;
+                    font-size: 275%;
                 }
                 p{
-                    font-size: 1.3vw;
+                    font-size: 140%;
                 }
             }
         }
@@ -127,44 +131,38 @@ header{
 #article1{
     background: $color-white;
     color: $color-grey;
-    height: 60vh;
+    
+    h1{
+        font-size: 275%;
+        padding: 1% 0;
+    }
     
     .wrapper{
+        display: flex;
+        flex-flow: row wrap;
         
-        .col{
-            display: inline-block;
-            width: 48%;
+        .row{
+            padding: 1% 0;
+            width: 100%;
             
-            blockquote{
-                background: $color-white;
-                border: solid 2px $color-lgrey;
-                border-radius: 10px;
-                font-size: 150%;
-                padding: 1%;
-                margin-top: 5%;
-                text-align: left;
-                height: 4%;
-
-                .blue{
-                    color: #3374bc;
-                }
-                .red{
-                    color: #a71d5d;
-                }
-                .orange{
-                    color: #ff8000;
-                }
-                .green{
-                    color: #007700;
-                }
-
-                .mcq-code, .mcq-terminal{
-                    color: $color-lgrey;
-                    margin-right: 4%;
+            p{
+                padding: 1% 0;
+            }
+            .col{
+                display: inline-block;
+                width: 48%;
+                
+                h2{
+                    font-size: 200%;
+                    padding: 0;
                 }
             }
-            .code{
-                font-family: monospace;
+            
+            &#no-padding-bottom{
+                padding-bottom: 0;
+            }
+            &#no-padding-top{
+                padding-top: 0;
             }
         }
     }
