@@ -3,8 +3,8 @@
 /////// // Change all functions to $this-><function>!!!
 /////// // [See getServerMotd for eg.]
     /*
-    FILENAME: MCQ(T).php
-    VERSION: Alpha 1.0
+    FILENAME: MCQ.php
+    VERSION: Alpha 0.4.2
     AUTHOR(S): OLIVER SCASE // JAKE TAYLOR
     SHORT DESCRIPTION: GET INFORMATION FROM YOUR SERVER!
     
