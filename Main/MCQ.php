@@ -3,8 +3,8 @@
 /////// // Change all functions to $this-><function>!!!
 /////// // [See getServerMotd for eg.]
     /*
-    FILENAME: MCQ(T).php
-    VERSION: Alpha 1.0
+    FILENAME: MCQ.php
+    VERSION: Alpha 0.4.2
     AUTHOR(S): OLIVER SCASE // JAKE TAYLOR
     SHORT DESCRIPTION: GET INFORMATION FROM YOUR SERVER!
     
@@ -158,20 +158,4 @@
         }
     }
 
-//////////////////////////////////////
-// [][][] UNTESTED FUNCTIONS [][][] //
-//////////////////////////////////////
-// These functions should work in theory, but have yet to be tested....
-
-// Well... Look at that! All the functions have been tested! :D
-// This means that the file is likely ready to be transferred to MCQ.php!
-
-/*
-$test = new query;
-$test->setIP("mc.jake.yt");
-echo $test->getServerMotd()."<br>";
-echo $test->getPlayerCount()."<br>";
-echo $test->getServerStatus()."<br>";
-var_dump($test->getPlayerList());
-*/
 ?>
